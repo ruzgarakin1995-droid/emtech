@@ -1,20 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: '/emtech',
   typescript: {
     ignoreBuildErrors: true,
   },
-  async redirects() {
+  async rewrites() {
     return [
       {
         source: '/',
         destination: '/emtech-store',
-        permanent: false,
       },
     ];
   },
-
 };
 
 export default nextConfig;
