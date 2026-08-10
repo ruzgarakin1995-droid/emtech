@@ -66,7 +66,7 @@ export function EmtechB2B() {
             </ul>
 
             <MagneticButton>
-              <Link href="/emtech-store/kurumsal/bayimiz-ol">
+              <Link href="/kurumsal/bayimiz-ol">
                 <button className="h-14 px-8 bg-white text-zinc-950 font-space text-xs font-bold uppercase tracking-widest hover:bg-[#0055FF] hover:text-white transition-colors rounded-sm flex items-center gap-3">
                   Bayi Başvurusu Yap <ArrowRight className="w-4 h-4" />
                 </button>

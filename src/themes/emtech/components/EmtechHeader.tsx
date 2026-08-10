@@ -20,7 +20,7 @@ export function EmtechHeader() {
         <div className="max-w-7xl mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
           
           {/* Logo */}
-          <Link href="/emtech-store" className="flex items-center group">
+          <Link href="/" className="flex items-center group">
             <MagneticButton>
               <div className="flex items-center gap-2 transition-transform group-hover:scale-105">
                 <div className="h-10 w-10 relative flex items-center justify-center bg-white shadow-lg border border-zinc-100 overflow-hidden">
@@ -34,12 +34,12 @@ export function EmtechHeader() {
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {[
-              { name: 'KATALOG', href: '/emtech-store/katalog' },
-              { name: 'LCD', href: '/emtech-store/kategori/kbs-lcd' },
-              { name: 'BATARYA', href: '/emtech-store/kategori/kbs-batarya' },
-              { name: 'BAYİMİZ OL', href: '/emtech-store/kurumsal/bayimiz-ol' },
-              { name: 'HAKKIMIZDA', href: '/emtech-store/kurumsal/hakkimizda' },
-              { name: 'İLETİŞİM', href: '/emtech-store/kurumsal/iletisim' }
+              { name: 'KATALOG', href: '/katalog' },
+              { name: 'LCD', href: '/kategori/kbs-lcd' },
+              { name: 'BATARYA', href: '/kategori/kbs-batarya' },
+              { name: 'BAYİMİZ OL', href: '/kurumsal/bayimiz-ol' },
+              { name: 'HAKKIMIZDA', href: '/kurumsal/hakkimizda' },
+              { name: 'İLETİŞİM', href: '/kurumsal/iletisim' }
             ].map((item) => (
               <Link 
                 key={item.name} 

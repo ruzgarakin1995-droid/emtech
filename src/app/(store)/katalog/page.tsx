@@ -211,7 +211,7 @@ export default function KatalogPage() {
                         transition={{ duration: 0.2 }}
                         key={product.id}
                       >
-                        <Link href={`/emtech-store/urun/${product.id}`} className="block h-full">
+                        <Link href={`/urun/${product.id}`} className="block h-full">
                           <div className="group bg-white border-2 border-zinc-200 hover:border-zinc-950 rounded-none overflow-hidden hover:-translate-y-2 hover:shadow-[6px_6px_0px_#0055FF] transition-all duration-300 flex flex-col h-full">
                             
                             {/* Product Image */}

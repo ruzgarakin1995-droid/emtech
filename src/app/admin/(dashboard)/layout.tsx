@@ -23,17 +23,17 @@ function AdminLayoutContent({ children }: { children: React.ReactNode }) {
 
   const handleLogout = () => {
     document.cookie = "emtech_admin_auth=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    router.push('/emtech-admin/login');
+    router.push('/admin/login');
   };
 
   const navItems = [
-    { name: 'Dashboard', href: '/emtech-admin', icon: LayoutDashboard },
-    { name: 'Hatırlatıcılar', href: '/emtech-admin/reminders', icon: Bell },
-    { name: 'Siparişler', href: '/emtech-admin/orders', icon: ShoppingBag, badge: activeOrdersCount },
-    { name: 'Müşteriler', href: '/emtech-admin/customers', icon: Users },
-    { name: 'Ürün Yönetimi', href: '/emtech-admin/products', icon: Package },
-    { name: 'Bayi Başvuruları', href: '/emtech-admin/applications', icon: Briefcase, badge: pendingAppsCount },
-    { name: 'Mağaza Ayarları', href: '/emtech-admin/settings', icon: Settings },
+    { name: 'Dashboard', href: '/admin', icon: LayoutDashboard },
+    { name: 'Hatırlatıcılar', href: '/admin/reminders', icon: Bell },
+    { name: 'Siparişler', href: '/admin/orders', icon: ShoppingBag, badge: activeOrdersCount },
+    { name: 'Müşteriler', href: '/admin/customers', icon: Users },
+    { name: 'Ürün Yönetimi', href: '/admin/products', icon: Package },
+    { name: 'Bayi Başvuruları', href: '/admin/applications', icon: Briefcase, badge: pendingAppsCount },
+    { name: 'Mağaza Ayarları', href: '/admin/settings', icon: Settings },
   ];
 
   return (
@@ -120,7 +120,7 @@ function AdminLayoutContent({ children }: { children: React.ReactNode }) {
         </nav>
 
         <div className="p-4">
-          <Link href="/emtech-store" title={!isDesktopSidebarOpen ? "Siteye Dön" : undefined} className={`flex items-center px-4 py-3 rounded-xl text-slate-500 hover:text-slate-800 hover:bg-white/40 transition-colors border border-transparent ${!isDesktopSidebarOpen ? 'md:justify-center' : 'gap-3'}`}>
+          <Link href="/" title={!isDesktopSidebarOpen ? "Siteye Dön" : undefined} className={`flex items-center px-4 py-3 rounded-xl text-slate-500 hover:text-slate-800 hover:bg-white/40 transition-colors border border-transparent ${!isDesktopSidebarOpen ? 'md:justify-center' : 'gap-3'}`}>
             <Store className="w-5 h-5 flex-shrink-0 text-slate-400" />
             <span className={`text-sm font-medium whitespace-nowrap transition-opacity duration-300 ${!isDesktopSidebarOpen ? 'md:hidden' : 'block'}`}>Siteye Dön</span>
           </Link>

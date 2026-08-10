@@ -30,7 +30,7 @@ export function EmtechCategoryDetail({ data }: { data: CategoryData }) {
       {/* Navigation Breadcrumb */}
       <div className="border-b border-zinc-200 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center gap-3">
-          <Link href="/emtech-store" className="text-zinc-500 hover:text-[#0055FF] transition-colors flex items-center gap-2 font-inter text-sm">
+          <Link href="/" className="text-zinc-500 hover:text-[#0055FF] transition-colors flex items-center gap-2 font-inter text-sm">
             <ArrowLeft className="w-4 h-4" />
             Mağazaya Dön
           </Link>
@@ -101,7 +101,7 @@ export function EmtechCategoryDetail({ data }: { data: CategoryData }) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {data.products.map((product: any, idx) => (
-              <Link href={`/emtech-store/urun/${product.slug}`} key={product.id}>
+              <Link href={`/urun/${product.slug}`} key={product.id}>
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}

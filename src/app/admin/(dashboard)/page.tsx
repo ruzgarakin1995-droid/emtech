@@ -244,7 +244,7 @@ export default function AdminDashboard() {
           </h3>
           <div className="flex flex-col gap-3 flex-1 overflow-hidden">
             {topDealers.length > 0 ? topDealers.map((dealer, index) => (
-              <Link href={`/emtech-admin/customers?customerId=${dealer.id}`} key={dealer.id} className={`flex items-center justify-between p-4 rounded-2xl transition-all ${index === 0 ? 'bg-gradient-to-r from-amber-100 to-yellow-50 border border-amber-300 shadow-md shadow-amber-500/10 scale-[1.02] hover:scale-[1.04]' : 'bg-white/50 border border-white hover:bg-white hover:shadow-md hover:-translate-y-0.5'}`}>
+              <Link href={`/admin/customers?customerId=${dealer.id}`} key={dealer.id} className={`flex items-center justify-between p-4 rounded-2xl transition-all ${index === 0 ? 'bg-gradient-to-r from-amber-100 to-yellow-50 border border-amber-300 shadow-md shadow-amber-500/10 scale-[1.02] hover:scale-[1.04]' : 'bg-white/50 border border-white hover:bg-white hover:shadow-md hover:-translate-y-0.5'}`}>
                 <div className="flex items-center gap-3">
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0 ${index === 0 ? 'bg-amber-500 text-white shadow-inner' : 'bg-slate-100 text-slate-500'}`}>
                     {index === 0 ? <Crown className="w-5 h-5" /> : index + 1}
@@ -284,7 +284,7 @@ export default function AdminDashboard() {
             <Activity className="w-5 h-5 text-indigo-500" /> Hızlı İşlemler
           </h3>
           <div className="flex flex-col gap-4">
-            <Link href="/emtech-admin/orders" className="flex items-center justify-between p-4 rounded-2xl bg-white/50 border border-white hover:bg-white hover:shadow-md transition-all group">
+            <Link href="/admin/orders" className="flex items-center justify-between p-4 rounded-2xl bg-white/50 border border-white hover:bg-white hover:shadow-md transition-all group">
               <div className="flex items-center gap-3">
                 <div className="p-2 bg-indigo-50 rounded-xl text-indigo-600">
                   <Package className="w-5 h-5" />
@@ -294,7 +294,7 @@ export default function AdminDashboard() {
               <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-indigo-600 group-hover:translate-x-1 transition-all" />
             </Link>
             
-            <Link href="/emtech-admin/customers" className="flex items-center justify-between p-4 rounded-2xl bg-white/50 border border-white hover:bg-white hover:shadow-md transition-all group">
+            <Link href="/admin/customers" className="flex items-center justify-between p-4 rounded-2xl bg-white/50 border border-white hover:bg-white hover:shadow-md transition-all group">
               <div className="flex items-center gap-3">
                 <div className="p-2 bg-pink-50 rounded-xl text-pink-600">
                   <Users className="w-5 h-5" />
@@ -304,7 +304,7 @@ export default function AdminDashboard() {
               <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-pink-600 group-hover:translate-x-1 transition-all" />
             </Link>
 
-            <Link href="/emtech-admin/settings" className="flex items-center justify-between p-4 rounded-2xl bg-white/50 border border-white hover:bg-white hover:shadow-md transition-all group">
+            <Link href="/admin/settings" className="flex items-center justify-between p-4 rounded-2xl bg-white/50 border border-white hover:bg-white hover:shadow-md transition-all group">
               <div className="flex items-center gap-3">
                 <div className="p-2 bg-emerald-50 rounded-xl text-emerald-600">
                   <Settings className="w-5 h-5" />

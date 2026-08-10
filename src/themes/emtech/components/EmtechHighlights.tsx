@@ -19,7 +19,7 @@ export function EmtechHighlights() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* CMP Plus LCD Highlight */}
-          <Link href="/emtech-store/kategori/cmp-plus-lcd" className="block group">
+          <Link href="/kategori/cmp-plus-lcd" className="block group">
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +63,7 @@ export function EmtechHighlights() {
           </Link>
 
           {/* Cartel Max Power Highlight */}
-          <Link href="/emtech-store/kategori/cartel-max-power" className="block group">
+          <Link href="/kategori/cartel-max-power" className="block group">
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}

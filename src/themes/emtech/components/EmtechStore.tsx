@@ -56,7 +56,7 @@ export function EmtechStore() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {products.map((product) => (
-            <Link href={`/emtech-store/urun/${product.slug}`} key={product.id}>
+            <Link href={`/urun/${product.slug}`} key={product.id}>
               <motion.div 
                 variants={itemVariants}
                 className="group bg-white border-2 border-zinc-200 hover:border-zinc-950 rounded-none overflow-hidden hover:-translate-y-2 hover:shadow-[8px_8px_0px_#0055FF] transition-all duration-300 flex flex-col relative h-full"

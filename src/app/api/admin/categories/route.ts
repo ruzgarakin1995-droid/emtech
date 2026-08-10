@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
-import { globalMockCategories } from '@/lib/mock-data/emtech-store';
+import { globalMockCategories } from '@/lib/mock-data';
 
 export async function GET() {
   try {

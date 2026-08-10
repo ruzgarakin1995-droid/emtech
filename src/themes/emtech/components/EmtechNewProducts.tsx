@@ -85,7 +85,7 @@ export function EmtechNewProducts() {
           
           {products.map((product, idx) => (
             <Link 
-              href={`/emtech-store/urun/${product.slug}`} 
+              href={`/urun/${product.slug}`} 
               key={product.id}
               className="snap-center sm:snap-start shrink-0 w-[calc(100vw-2rem)] sm:w-[300px] md:w-[350px]"
             >

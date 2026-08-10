@@ -23,7 +23,7 @@ export function EmtechCategories() {
         <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[500px]">
           
           {/* Large Left: 2 cols, 2 rows */}
-          <Link href="/emtech-store/kategori/kbs-lcd" className="md:col-span-2 md:row-span-2 block group">
+          <Link href="/kategori/kbs-lcd" className="md:col-span-2 md:row-span-2 block group">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ export function EmtechCategories() {
           </Link>
 
           {/* Right Top: 2 cols, 1 row */}
-          <Link href="/emtech-store/kategori/cartel-max-power" className="md:col-span-2 md:row-span-1 block group">
+          <Link href="/kategori/cartel-max-power" className="md:col-span-2 md:row-span-1 block group">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ export function EmtechCategories() {
           </Link>
 
           {/* Right Bottom Left: 1 col, 1 row */}
-          <Link href="/emtech-store/kategori/cmp-plus-lcd" className="md:col-span-1 md:row-span-1 block group">
+          <Link href="/kategori/cmp-plus-lcd" className="md:col-span-1 md:row-span-1 block group">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -78,7 +78,7 @@ export function EmtechCategories() {
           </Link>
 
           {/* Right Bottom Right: 1 col, 1 row */}
-          <Link href="/emtech-store/kategori/kbs-batarya" className="md:col-span-1 md:row-span-1 block group">
+          <Link href="/kategori/kbs-batarya" className="md:col-span-1 md:row-span-1 block group">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

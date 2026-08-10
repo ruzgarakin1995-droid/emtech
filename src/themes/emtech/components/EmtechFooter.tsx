@@ -73,7 +73,7 @@ export function EmtechFooter() {
                 { name: 'Cartel Max Power', slug: 'cartel-max-power' }
               ].map((link, idx) => (
                 <li key={idx}>
-                  <Link href={`/emtech-store/kategori/${link.slug}`} className="font-inter text-sm text-zinc-600 hover:text-[#0055FF] transition-colors">
+                  <Link href={`/kategori/${link.slug}`} className="font-inter text-sm text-zinc-600 hover:text-[#0055FF] transition-colors">
                     {link.name}
                   </Link>
                 </li>
@@ -85,13 +85,13 @@ export function EmtechFooter() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/emtech-store/kurumsal/hakkimizda" className="font-inter text-sm text-zinc-600 hover:text-[#0055FF] transition-colors">Hakkımızda</Link>
+                <Link href="/kurumsal/hakkimizda" className="font-inter text-sm text-zinc-600 hover:text-[#0055FF] transition-colors">Hakkımızda</Link>
               </li>
               <li>
-                <Link href="/emtech-store/kurumsal/sss" className="font-inter text-sm text-zinc-600 hover:text-[#0055FF] transition-colors">Sıkça Sorulan Sorular</Link>
+                <Link href="/kurumsal/sss" className="font-inter text-sm text-zinc-600 hover:text-[#0055FF] transition-colors">Sıkça Sorulan Sorular</Link>
               </li>
               <li>
-                <Link href="/emtech-store/kurumsal/kvkk" className="font-inter text-sm text-zinc-600 hover:text-[#0055FF] transition-colors">KVKK & Sözleşmeler</Link>
+                <Link href="/kurumsal/kvkk" className="font-inter text-sm text-zinc-600 hover:text-[#0055FF] transition-colors">KVKK & Sözleşmeler</Link>
               </li>
             </ul>
           </div>

@@ -49,12 +49,12 @@ export function EmtechHero() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center gap-4 md:gap-5 w-full sm:w-auto"
           >
-            <Link href="/emtech-store/katalog" className="w-full sm:w-auto">
+            <Link href="/katalog" className="w-full sm:w-auto">
               <button className="h-14 px-8 w-full bg-[#0055FF] border-2 border-zinc-950 text-white font-space text-xs font-bold uppercase tracking-widest hover:bg-blue-700 rounded-sm flex items-center justify-center gap-3 shadow-[4px_4px_0px_#000] hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-y-1 active:translate-x-1 active:shadow-none transition-all duration-200">
                 Kataloğu İncele <ArrowRight className="w-4 h-4" />
               </button>
             </Link>
-            <Link href="/emtech-store/kurumsal/bayimiz-ol" className="w-full sm:w-auto">
+            <Link href="/kurumsal/bayimiz-ol" className="w-full sm:w-auto">
               <button className="h-14 px-8 w-full bg-white border-2 border-zinc-950 text-zinc-950 font-space text-xs font-bold uppercase tracking-widest hover:bg-zinc-50 rounded-sm flex items-center justify-center gap-3 shadow-[4px_4px_0px_#000] hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000] active:translate-y-1 active:translate-x-1 active:shadow-none transition-all duration-200">
                 Bayimiz Olun
               </button>

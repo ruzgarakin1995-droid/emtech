@@ -37,7 +37,7 @@ export function EmtechProductDetail({ product }: { product: ProductData }) {
       {/* Navigation Breadcrumb */}
       <div className="border-b-2 border-zinc-950 bg-zinc-50">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center gap-3">
-          <Link href={`/emtech-store/kategori/${product.categoryTitle.toLowerCase().replace(/ /g, '-').replace('ı', 'i')}`} className="text-zinc-500 hover:text-[#0055FF] transition-colors flex items-center gap-2 font-inter text-sm font-medium">
+          <Link href={`/kategori/${product.categoryTitle.toLowerCase().replace(/ /g, '-').replace('ı', 'i')}`} className="text-zinc-500 hover:text-[#0055FF] transition-colors flex items-center gap-2 font-inter text-sm font-medium">
             <ArrowLeft className="w-4 h-4" />
             Kategoriye Dön
           </Link>

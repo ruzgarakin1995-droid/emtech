@@ -29,7 +29,7 @@ export default function AdminLoginPage() {
       const data = await res.json();
 
       if (res.ok) {
-        router.push('/emtech-admin');
+        router.push('/admin');
       } else {
         setError(data.error || 'Giriş başarısız.');
         setLoading(false);
