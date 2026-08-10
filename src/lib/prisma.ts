@@ -10,7 +10,8 @@ const adapter = new PrismaMariaDb({
   port: 3306,
   user: "root",
   password: "Egemo070425.",
-  database: "website_builder"
+  database: "website_builder",
+  allowPublicKeyRetrieval: true
 });
 
 export const prisma = globalForPrisma.prisma ?? new PrismaClient({ adapter })
