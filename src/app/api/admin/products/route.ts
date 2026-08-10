@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 
-import { globalMockProducts, globalMockCategories } from '@/lib/mock-data';
+import { globalMockProducts, globalMockCategories } from '@/lib/mock-data/emtech-store';
 
 export async function GET() {
   try {
