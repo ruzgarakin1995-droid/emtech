@@ -16,12 +16,7 @@ export default async function ProductPage({ params }: { params: Promise<{ produc
   try {
     if (prisma && prisma.ecomProduct) {
       const dbProduct = await prisma.ecomProduct.findFirst({
-        where: {
-          OR: [
-            { id: resolvedParams.productId },
-            { slug: resolvedParams.productId }
-          ]
-        },
+        where: { id: resolvedParams.productId },
         include: { category: true }
       });
 
