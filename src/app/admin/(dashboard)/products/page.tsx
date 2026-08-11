@@ -176,11 +176,15 @@ export default function ProductsAdminPage() {
       });
       
       if (res.ok) {
+        alert(isEdit ? "Ürün başarıyla güncellendi!" : "Ürün başarıyla eklendi!");
         fetchProducts();
         closeModal();
+      } else {
+        alert("Kaydetme başarısız oldu! Lütfen tekrar deneyin.");
       }
     } catch (error) {
-      console.error(error);
+      console.error("Save error", error);
+      alert("Bağlantı hatası oluştu, kaydedilemedi!");
     }
   };
 

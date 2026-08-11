@@ -44,9 +44,12 @@ export default function SettingsAdminPage() {
       if (res.ok) {
         setIsSaved(true);
         setTimeout(() => setIsSaved(false), 3000);
+      } else {
+        alert("Kaydetme başarısız oldu! Lütfen tekrar deneyin.");
       }
     } catch (error) {
       console.error("Failed to save settings", error);
+      alert("Bağlantı hatası oluştu, kaydedilemedi!");
     }
   };
 
