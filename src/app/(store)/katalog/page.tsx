@@ -36,7 +36,7 @@ export default function KatalogPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/api/store/katalog')
+    fetch('/api/store/katalog', { cache: 'no-store' })
       .then(res => res.json())
       .then(data => {
         setCategoriesList(data.categories || []);

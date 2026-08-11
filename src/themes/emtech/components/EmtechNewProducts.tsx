@@ -13,7 +13,7 @@ export function EmtechNewProducts() {
   useEffect(() => {
     const fetchNewProducts = async () => {
       try {
-        const res = await fetch('/api/store/katalog');
+        const res = await fetch('/api/store/katalog', { cache: 'no-store' });
         const data = await res.json();
         if (data && data.products) {
           // Take the newest 10 products

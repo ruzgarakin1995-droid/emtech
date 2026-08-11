@@ -24,7 +24,7 @@ export const SettingsProvider = ({ children }: { children: React.ReactNode }) =>
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/api/store/settings')
+    fetch('/api/store/settings', { cache: 'no-store' })
       .then(res => res.json())
       .then(data => {
         setSettings(data);

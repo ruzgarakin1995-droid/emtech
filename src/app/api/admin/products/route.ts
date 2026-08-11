@@ -3,6 +3,9 @@ import { prisma } from '@/lib/prisma';
 
 import { globalMockProducts, globalMockCategories } from '@/lib/mock-data/emtech-store';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export async function GET() {
   try {
     const products = await prisma.ecomProduct.findMany({
