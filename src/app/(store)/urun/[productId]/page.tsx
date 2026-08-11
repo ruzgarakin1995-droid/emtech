@@ -30,6 +30,26 @@ export default async function ProductPage({ params }: { params: Promise<{ produc
         stock: dbProduct.inStock ? 'Stokta Var' : 'Tükendi',
       };
       categoryTitle = dbProduct.category?.name || "Tüm Ürünler";
+      
+      const isBattery = categoryTitle.toLowerCase().includes('batarya') || categoryTitle.toLowerCase().includes('power');
+      
+      if (isBattery) {
+        detailedFeatures = [
+          { title: "Maksimum Batarya Ömrü", desc: "Yüksek mAh kapasitesi sayesinde cihazınız ilk günkü gibi uzun süre açık kalır, sizi asla yarı yolda bırakmaz." },
+          { title: "Orijinal Entegre Uyumu", desc: "Anakart ile %100 uyumlu iletişim kurarak anlık kapanma sorunlarının önüne geçer, stabil bir güç yönetimi sunar." },
+          { title: "Güvenli Şarj Teknolojisi", desc: "Aşırı ısınma, yüksek voltaj ve kısa devre koruması ile cihazınızı daima güvende tutar. Isınma problemini minimuma indirir." },
+          { title: "Sıfır Döngü Garantisi", desc: "Fabrikadan tamamen sıfır döngü (zero cycle) ile çıkar. Performans kaybı olmayan, taze ve yüksek ömürlü hücrelere sahiptir." },
+          { title: "Hızlı Kurulum ve Uyum", desc: "Birebir orijinal ölçülerde üretildiği için kasa içerisine sorunsuz ve kolay montaj imkanı sağlar. Kapak şişme problemleri yaşatmaz." }
+        ];
+      } else {
+        detailedFeatures = [
+          { title: "Üstün Görüntü Kalitesi", desc: "Ekranlarımız, yüksek çözünürlük sunarak net ve keskin görüntüler sağlar. Parlak ve canlı renkler, kullanıcı deneyimini bir üst seviyeye taşır." },
+          { title: "Yüksek Dokunmatik Performansı", desc: "Gelişmiş dokunmatik panel teknolojisi, hızlı ve hassas bir dokunma deneyimi sağlar. Kullanıcılar, kaydırma, yazma ve diğer tüm işlemleri akıcı bir şekilde gerçekleştirebilir." },
+          { title: "Dayanıklı ve Güvenilir Malzeme", desc: "Ekranlar, uzun ömürlü kullanım için üretilmiş ve darbelere karşı dayanıklılığı artırılmıştır. Teknik servislerin ihtiyaçlarını karşılamak üzere üretilen bu ekranlar, cihazların daha uzun süre performans göstermesine olanak tanır." },
+          { title: "Uyumluluk Garantisi", desc: "Ürünlerimiz %100 uyumludur. Teknik servislerde sorunsuz montaj yapılabilir ve cihazlarla tam performansla çalışır." },
+          { title: "Montaj Kolaylığı", desc: "Profesyonel teknisyenler tarafından rahatlıkla takılabilir ve hızlı montaj süreci sunar. Ekranlar, tam oturumu garanti eden hassas üretimle tasarlanmıştır." }
+        ];
+      }
     }
     }
   } catch (error) {
