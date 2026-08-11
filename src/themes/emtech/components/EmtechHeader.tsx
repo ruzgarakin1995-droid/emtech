@@ -80,6 +80,54 @@ export function EmtechHeader() {
           </div>
         </div>
       </header>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 bg-white md:hidden"
+          >
+            <div className="flex flex-col h-full p-6">
+              <div className="flex justify-between items-center mb-12">
+                <span className="font-space font-black text-2xl tracking-tighter text-zinc-950 uppercase">EMTECH</span>
+                <button 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="w-10 h-10 flex items-center justify-center bg-zinc-100 rounded-lg"
+                >
+                  <X className="w-6 h-6 text-zinc-900" />
+                </button>
+              </div>
+
+              <nav className="flex flex-col gap-6">
+                {[
+                  { name: 'KATALOG', href: '/katalog' },
+                  { name: 'LCD EKRANLAR', href: '/kategori/kbs-lcd' },
+                  { name: 'BATARYALAR', href: '/kategori/kbs-batarya' },
+                  { name: 'BAYİMİZ OL', href: '/kurumsal/bayimiz-ol' },
+                  { name: 'HAKKIMIZDA', href: '/kurumsal/hakkimizda' },
+                  { name: 'İLETİŞİM', href: '/kurumsal/iletisim' }
+                ].map((item) => (
+                  <Link 
+                    key={item.name} 
+                    href={item.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="font-space text-2xl font-black tracking-widest uppercase text-zinc-950 border-b border-zinc-100 pb-4"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </nav>
+
+              <div className="mt-auto pb-8 text-center">
+                <p className="font-inter text-sm text-zinc-500">© 2024 Emtech Store</p>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }
